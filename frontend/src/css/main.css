@@ -7,4 +7,12 @@
 
 .codeMirror {
   border-radius: 25px;
+  height: auto;
+}
+
+.buttonsPane {
+  padding: 10px;
+  display: flex;
+  justify-content: space-evenly;
+  width: auto;
 }
