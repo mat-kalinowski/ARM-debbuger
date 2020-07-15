@@ -1,14 +1,14 @@
 version: "3"
 services:
-        backend:
-                build: ./backend
-                ports: 
-                        - "8000:8000"
-                volumes:
-                        - ./backend/src/:/root
-                environment:
-                        GOOS: "linux"
-                        CGO_ENABLED: "1"
+  #backend:
+  #             build: ./backend
+  #             ports: 
+  #                     - "8000:8000"
+  #             volumes:
+  #                     - ./backend/src/:/root
+  #             environment:
+  #                     GOOS: "linux"
+  #                     CGO_ENABLED: "1"
 
         frontend:
                 build: ./frontend
@@ -16,4 +16,5 @@ services:
                         - "3000:3000"
                 volumes:
                         - ./frontend/src:/node/src
-                        - ./frontend/public:/node/public 
+                        - ./frontend/public:/node/public
+                stdin_open: true 
