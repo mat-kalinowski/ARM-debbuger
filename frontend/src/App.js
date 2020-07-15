@@ -1,24 +1,17 @@
 import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import './css/main.css';
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div className="row">
+      <div className="col s10 offset-m1 flex">
+        <div className="col m6 s10 teal lighten-4"><span className="flow-text">
+          Assembly code input
+          </span>
+          <textarea></textarea>
+        </div>
+        <div className="col m6 s10 teal lighten-2"><span className="flow-text">Debbuger view</span></div>
+      </div>
     </div>
   );
 }
